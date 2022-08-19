@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import MainMenu from './AppStates/MainMenu';
+import CanvasScreen from './AppStates/CanvasScreen';
+
+import { AppContext } from './Helpers/Contexts';
 
 function App() {
+  const [appState, setAppState] = useState('menu');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <AppContext.Provider value={ { appState, setAppState } }>
+        { appState === 'menu' && <MainMenu /> }
+        { appState === 'canvas' && <CanvasScreen /> }
+      </AppContext.Provider>
     </div>
   );
 }
