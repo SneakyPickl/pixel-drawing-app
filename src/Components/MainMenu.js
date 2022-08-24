@@ -1,24 +1,14 @@
 import '../CSS/MainMenu.css'
 import React, { useContext,useState } from 'react'
 import { AppContext } from '../Helpers/Contexts';
+import database from '../Helpers/database.json';
 
 
 
 function MainMenu() {
-     const { setAppState } = useContext(AppContext);
+    const { setAppState } = useContext(AppContext);
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
-
-    const database = [
-        {
-            username: 'user1',
-            password: 'pass1'
-        }, 
-        {
-            username: 'user2',
-            password: 'pass2'
-        }
-    ];
 
     const loginErrors = {
         uname: 'invalid username',
