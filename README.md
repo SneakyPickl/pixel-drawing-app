@@ -1,3 +1,13 @@
+# Resources
+Read/Write Data to JSON in Javascript (won't work with React, but still a good read) - https://stackoverflow.com/questions/36856232/write-add-data-in-json-file-using-node-js
+
+Retain changes on a HTML5 Canvas - https://stackoverflow.com/questions/29492756/drawing-and-retain-the-changes-on-html5-canvas
+
+Draw Image to Canvas from Data URL - https://stackoverflow.com/questions/4773966/drawing-an-image-from-a-data-url-to-a-canvas
+
+Load JSON Data from Local File in React JS - https://stackoverflow.com/questions/31758081/loading-json-data-from-local-file-into-react-js
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
