@@ -1,7 +1,7 @@
-import './App.css';
+import './CSS/App.css';
 import React, { useState } from 'react';
-import MainMenu from './AppStates/MainMenu';
-import CanvasScreen from './AppStates/CanvasScreen';
+import MainMenu from './Components/MainMenu';
+import CanvasScreen from './Components/CanvasScreen';
 
 import { AppContext } from './Helpers/Contexts';
 

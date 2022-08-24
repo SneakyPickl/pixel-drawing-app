@@ -1,0 +1,12 @@
+.canvasScreen {
+    width: 1800px;
+    height: 900px;
+    border-radius: 10px;
+    background-color: darksalmon;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

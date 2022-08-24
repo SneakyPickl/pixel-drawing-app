@@ -1,6 +1,10 @@
-import React, { useEffect } from 'react'
+import '../CSS/CanvasScreen.css'
+import React, { useEffect, useContext } from 'react'
+import { AppContext } from '../Helpers/Contexts'
 
 function CanvasScreen() {
+    const { setAppState } = useContext(AppContext);
+    
     useEffect(() => {
         const canvas = document.getElementById('myCanvas');
         const width = canvas.width = window.innerWidth - 250;
@@ -59,6 +63,7 @@ function CanvasScreen() {
         <div className='canvasScreen'>
             <div className='canvasToolbar'>
                 { /* aria-label is for assistive technology (like a screen reader reading off the label to a blind person) see here: https://stackoverflow.com/questions/22039910/what-is-aria-label-and-how-should-i-use-it*/ }
+                <button onClick={ () => { setAppState("menu") } }>Main Menu</button>
                 <label htmlFor="colorPicker">Pick a color</label>
                 <input type="color" id="colorPicker" aria-label="select pen color"/>
                 <input type="range" min={"1"} max={"10"} defaultValue={"1"}/>
